@@ -1,0 +1,85 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "role": "Full-Stack Developer",
+    "title": "I turn ideas into complete web applications.",
+    "description": "I build tailored digital solutions, from intuitive interfaces to APIs and databases, focusing on each business's needs.",
+    "projectsButton": "View projects",
+    "contactButton": "Discuss a project"
+  },
+  "about": {
+    "label": "About me",
+    "title": "Development focused on real-world solutions.",
+    "description": "I am a Full-Stack Developer who has been building personal projects to apply and expand my web development knowledge. My work covers interface development, APIs and database integration, with a focus on creating organised, functional solutions tailored to each project's needs."
+  },
+  "skills": {
+    "label": "Skills",
+    "title": "Technologies I work with",
+    "description": "Tools and technologies I have used in my web development projects.",
+    "categories": {
+      "frontend": "Frontend Development",
+      "backend": "Backend Development",
+      "database": "Databases and ORM",
+      "quality": "Quality and Testing",
+      "tools": "Tools"
+    }
+  },
+  "projects": {
+    "label": "Portfolio",
+    "title": "Featured projects",
+    "description": "Some of the projects I have been working on, applying my frontend and backend development knowledge.",
+    "api": {
+      "category": "Backend Development",
+      "title": "Ecomba API",
+      "description": "An e-commerce API built with Node.js, TypeScript, Express, Prisma and PostgreSQL.",
+      "explore": "Explore API",
+      "server": "Access server",
+      "gallery": {
+        "products": "GET — Retrieve products",
+        "categories": "GET — Retrieve categories",
+        "login": "POST — Authentication",
+        "createProduct": "POST — Create product"
+      }
+    },
+    "admin": {
+      "category": "Frontend Development",
+      "title": "Ecomba Admin",
+      "description": "An administrative dashboard for managing an online store, built with React and TypeScript.",
+      "explore": "Explore project",
+      "gallery": {
+        "overview": "Overview",
+        "products": "Product management",
+        "categories": "Category management",
+        "orders": "Order management",
+        "orderDetails": "Order details",
+        "clients": "Customer management",
+        "payments": "Payment management",
+        "deactivatedProduct": "Product deactivation"
+      }
+    },
+    "gallery": {
+      "view": "View gallery",
+      "previous": "Previous image",
+      "next": "Next image",
+      "close": "Close gallery"
+    }
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Let's talk about your project",
+    "description": "Have an idea or need a digital solution developed? Get in touch so we can discuss your project.",
+    "emailButton": "Send email",
+    "whatsappButton": "WhatsApp"
+  },
+  "footer": {
+    "message": "Built with dedication and attention to detail.",
+    "copyright": "All rights reserved.",
+    "backToTop": "Back to top"
+  }
+}

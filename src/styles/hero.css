@@ -1,0 +1,186 @@
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 150px;
+  padding-bottom: 90px;
+}
+
+.hero-section .container {
+  max-width: var(--container-width);
+}
+
+.hero-role {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero-role::before {
+  content: '';
+  width: 26px;
+  height: 1px;
+  flex-shrink: 0;
+  background: var(--accent);
+}
+
+.hero-section h1 {
+  max-width: 850px;
+  color: var(--text-primary);
+  font-family: var(--font-heading);
+  font-size: clamp(42px, 7vw, 76px);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -3px;
+  text-wrap: balance;
+}
+
+.hero-description {
+  max-width: 590px;
+  margin-top: 26px;
+  color: var(--text-secondary);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 36px;
+}
+
+.hero-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 0 24px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.hero-actions a:first-child {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+}
+
+.hero-actions a:first-child:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  transform: translateY(-3px);
+}
+
+.hero-actions a:last-child {
+  background: var(--bg-card);
+  color: var(--text-primary);
+}
+
+.hero-actions a:last-child:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.hero-actions a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 90vh;
+    padding-top: 130px;
+    padding-bottom: 76px;
+  }
+
+  .hero-role {
+    margin-bottom: 22px;
+    font-size: 12px;
+  }
+
+  .hero-section h1 {
+    font-size: clamp(40px, 8vw, 58px);
+    letter-spacing: -1.8px;
+    line-height: 1.15;
+  }
+
+  .hero-description {
+    max-width: 540px;
+    margin-top: 22px;
+    font-size: 15px;
+    line-height: 1.85;
+  }
+
+  .hero-actions {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    min-height: auto;
+    padding-top: 140px;
+    padding-bottom: 80px;
+  }
+
+  .hero-role {
+    gap: 8px;
+    font-size: 11px;
+    letter-spacing: 1.6px;
+  }
+
+  .hero-role::before {
+    width: 20px;
+  }
+
+  .hero-section h1 {
+    font-size: clamp(36px, 10vw, 46px);
+    letter-spacing: -1.4px;
+    line-height: 1.18;
+  }
+
+  .hero-description {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  .hero-actions a {
+    width: 100%;
+    min-height: 48px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-actions a {
+    transition: none;
+  }
+
+  .hero-actions a:hover {
+    transform: none;
+  }
+}

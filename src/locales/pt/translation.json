@@ -1,0 +1,85 @@
+{
+  "navigation": {
+    "home": "Início",
+    "about": "Sobre mim",
+    "skills": "Competências",
+    "projects": "Projectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "role": "Full-Stack Developer",
+    "title": "Transformo ideias em aplicações web completas",
+    "description": "Desenvolvo soluções digitais à medida, desde interfaces intuitivas até APIs e bases de dados, com foco nas necessidades de cada negócio.",
+    "projectsButton": "Ver projectos",
+    "contactButton": "Falar sobre um projecto"
+  },
+  "about": {
+    "label": "Sobre mim",
+    "title": "Desenvolvimento com foco em soluções reais",
+    "description": "Sou Full-Stack Developer e tenho desenvolvido projectos pessoais para aplicar e aprofundar os meus conhecimentos em desenvolvimento web. O meu trabalho abrange a criação de interfaces, APIs e integração com bases de dados, procurando construir soluções organizadas, funcionais e adaptadas às necessidades de cada projecto."
+  },
+  "skills": {
+    "label": "Competências",
+    "title": "Tecnologias que utilizo",
+    "description": "Ferramentas e tecnologias que tenho utilizado nos meus projectos de desenvolvimento web.",
+    "categories": {
+      "frontend": "Desenvolvimento Frontend",
+      "backend": "Desenvolvimento Backend",
+      "database": "Bases de dados e ORM",
+      "quality": "Qualidade e testes",
+      "tools": "Ferramentas"
+    }
+  },
+  "projects": {
+    "label": "Portfólio",
+    "title": "Projectos em destaque",
+    "description": "Alguns dos projectos em que tenho trabalhado, aplicando conhecimentos de desenvolvimento frontend e backend.",
+    "api": {
+      "category": "Desenvolvimento Backend",
+      "title": "Ecomba API",
+      "description": "API para comércio electrónico, desenvolvida com Node.js, TypeScript, Express, Prisma e PostgreSQL.",
+      "explore": "Explorar API",
+      "server": "Aceder ao servidor",
+      "gallery": {
+        "products": "GET — Consultar produtos",
+        "categories": "GET — Consultar categorias",
+        "login": "POST — Autenticação",
+        "createProduct": "POST — Criar produto"
+      }
+    },
+    "admin": {
+      "category": "Desenvolvimento Frontend",
+      "title": "Ecomba Admin",
+      "description": "Painel administrativo para gestão de uma loja online, desenvolvido com React e TypeScript.",
+      "explore": "Explorar projecto",
+      "gallery": {
+        "overview": "Visão geral",
+        "products": "Gestão de produtos",
+        "categories": "Gestão de categorias",
+        "orders": "Gestão de encomendas",
+        "orderDetails": "Detalhes da encomenda",
+        "clients": "Gestão de clientes",
+        "payments": "Gestão de pagamentos",
+        "deactivatedProduct": "Desactivação de produto"
+      }
+    },
+    "gallery": {
+      "view": "Ver galeria",
+      "previous": "Imagem anterior",
+      "next": "Imagem seguinte",
+      "close": "Fechar galeria"
+    }
+  },
+  "contact": {
+    "label": "Contacto",
+    "title": "Vamos conversar sobre o teu projecto",
+    "description": "Tens uma ideia ou precisas de desenvolver uma solução digital? Entra em contacto comigo para conversarmos sobre o teu projecto.",
+    "emailButton": "Enviar email",
+    "whatsappButton": "WhatsApp"
+  },
+  "footer": {
+    "message": "Desenvolvido com dedicação e atenção aos detalhes.",
+    "copyright": "Todos os direitos reservados.",
+    "backToTop": "Voltar ao topo"
+  }
+}
