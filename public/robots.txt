@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lucasalface.com/sitemap.xml
+Sitemap: https://www.lucasalface.com/sitemap.xml
