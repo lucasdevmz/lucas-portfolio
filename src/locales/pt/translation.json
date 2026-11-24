@@ -63,6 +63,23 @@
         "deactivatedProduct": "Desactivação de produto"
       }
     },
+    "digitalStore": {
+      "category": "Frontend | E-commerce demonstrativo",
+      "title": "Digital Store",
+      "description": "Loja online demonstrativa com catálogo de produtos, filtros, carrinho de compras, checkout simulado e painel administrativo.",
+      "explore": "Explorar projecto",
+      "demo": "Ver demonstração",
+      "gallery": {
+        "home": "Página inicial",
+        "categories": "Categorias de produtos",
+        "product": "Detalhes do produto",
+        "cart": "Carrinho de compras",
+        "checkout": "Checkout",
+        "admin": "Visão geral do painel administrativo",
+        "adminProducts": "Gestão de produtos",
+        "adminOrders": "Gestão de encomendas"
+      }
+    },
     "gallery": {
       "view": "Ver galeria",
       "previous": "Imagem anterior",

@@ -66,7 +66,8 @@ function SkillsSection() {
               variants={cardVariants}
               whileHover={
                 shouldReduceMotion ? undefined : { y: -4, transition: { duration: 0.25 } }
-              }>
+              }
+            >
               <h3>{t(group.titleKey)}</h3>
 
               <div className="skill-list">

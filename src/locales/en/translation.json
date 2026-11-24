@@ -63,6 +63,23 @@
         "deactivatedProduct": "Product deactivation"
       }
     },
+    "digitalStore": {
+      "category": "Frontend | E-commerce demo",
+      "title": "Digital Store",
+      "description": "A demo online store featuring a product catalogue, filters, shopping cart, simulated checkout and administrative dashboard.",
+      "explore": "Explore project",
+      "demo": "View live demo",
+      "gallery": {
+        "home": "Homepage",
+        "categories": "Product categories",
+        "product": "Product details",
+        "cart": "Shopping cart",
+        "checkout": "Checkout",
+        "admin": "Administrative dashboard overview",
+        "adminProducts": "Product management",
+        "adminOrders": "Order management"
+      }
+    },
     "gallery": {
       "view": "View gallery",
       "previous": "Previous image",

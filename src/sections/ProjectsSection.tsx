@@ -4,22 +4,27 @@ import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
 import { X, ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react'
 import overviewImage from '../assets/projects/review.png'
 import apiProductsImage from '../assets/projects/ecomba-api/get-products.png'
-import { apiImages, adminImages } from '../utils/apiImages'
+import digitalStoreHomeImage from '../assets/projects/digital-store/home.png'
+import { apiImages, adminImages, digitalStoreImages } from '../utils/apiImages'
 
 const apiUrl = ''
+const digitalStoreUrl = 'https://digital-store-red.vercel.app/'
 
-type GalleryProject = 'api' | 'admin'
-
+type GalleryProject = 'api' | 'admin' | 'digitalStore'
 
 function ProjectsSection() {
   const { t } = useTranslation()
   const shouldReduceMotion = useReducedMotion()
 
   const [selectedProject, setSelectedProject] = useState<GalleryProject | null>(null)
-
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
 
-  const currentImages = selectedProject === 'api' ? apiImages : adminImages
+  const currentImages =
+    selectedProject === 'api'
+      ? apiImages
+      : selectedProject === 'admin'
+        ? adminImages
+        : digitalStoreImages
 
   const openGallery = (project: GalleryProject) => {
     setSelectedProject(project)
@@ -191,6 +196,61 @@ function ProjectsSection() {
               </button>
             </div>
           </motion.article>
+
+          <motion.article
+            className="project-card"
+            variants={cardVariants}
+            whileHover={shouldReduceMotion ? undefined : { y: -6, transition: { duration: 0.25 } }}
+          >
+            <button
+              type="button"
+              className="project-preview project-image-preview"
+              onClick={() => openGallery('digitalStore')}
+              aria-label={`${t('projects.gallery.view')}: Digital Store`}
+            >
+              <motion.img
+                src={digitalStoreHomeImage}
+                alt={t('projects.digitalStore.gallery.home')}
+                whileHover={shouldReduceMotion ? undefined : { scale: 1.04 }}
+                transition={{ duration: 0.4 }}
+              />
+              <span>{t('projects.gallery.view')}</span>
+            </button>
+
+            <div className="project-content">
+              <p className="project-category">{t('projects.digitalStore.category')}</p>
+
+              <h3>{t('projects.digitalStore.title')}</h3>
+
+              <p className="project-description">{t('projects.digitalStore.description')}</p>
+
+              <div className="project-technologies">
+                {['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'React Router'].map(
+                  (technology) => (
+                    <span key={technology}>{technology}</span>
+                  ),
+                )}
+              </div>
+
+              <button
+                type="button"
+                className="project-gallery-button"
+                onClick={() => openGallery('digitalStore')}
+              >
+                {t('projects.digitalStore.explore')}
+              </button>
+
+              <a
+                href={digitalStoreUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-explore-button"
+              >
+                {t('projects.digitalStore.demo')}
+                <ExternalLink size={16} />
+              </a>
+            </div>
+          </motion.article>
         </motion.div>
       </div>
 
@@ -221,11 +281,7 @@ function ProjectsSection() {
             >
               <div className="project-gallery-header">
                 <div>
-                  <p>
-                    {selectedProject === 'api'
-                      ? t('projects.api.title')
-                      : t('projects.admin.title')}
-                  </p>
+                  <p>{t(`projects.${selectedProject}.title`)}</p>
 
                   <h3>{t(currentImages[selectedImage].titleKey)}</h3>
                 </div>
